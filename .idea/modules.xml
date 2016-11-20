@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/pathology.iml" filepath="$PROJECT_DIR$/pathology.iml" />
       <module fileurl="file://$PROJECT_DIR$/pathology-domain/pathology-domain.iml" filepath="$PROJECT_DIR$/pathology-domain/pathology-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pathology-web/pathology-web.iml" filepath="$PROJECT_DIR$/pathology-web/pathology-web.iml" />
     </modules>
   </component>
 </project>

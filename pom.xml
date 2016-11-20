@@ -11,8 +11,18 @@
     <name>Hinacom Pathology</name>
 
     <modules>
-
+        <module>pathology-domain</module>
     </modules>
+
+    <dependencies>
+    <!-- spring start-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+    </dependencies>
 
     <build>
         <plugins>
@@ -31,7 +41,7 @@
 
     <properties>
         <project.version>1.0.0</project.version>
-        <spring.version>4.3.0.RELEASE</spring.version>
+        <spring.version>4.3.4.RELEASE</spring.version>
     </properties>
 
 </project>
