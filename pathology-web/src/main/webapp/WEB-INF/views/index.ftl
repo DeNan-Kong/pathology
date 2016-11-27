@@ -6,7 +6,7 @@
 <body>
 
 <div ng-app="app" ng-controller="ctrl">
-    <p>Hello World!</p>
+    <p>Rest implementation exmples</p>
 </div>
 </body>
 </html>
