@@ -1,12 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<#include "shared/site-head.ftl">
+<#include "shared/page-head.ftl">
+
 </head>
 <body>
 
-<div ng-app="app" ng-controller="ctrl">
-    <p>Rest implementation exmples</p>
+<div>
+    <div class="container">
+        <a href="rest">Rest Examples</a>
+    </div>
+
+<#include "shared/common-js.ftl">
 </div>
 </body>
 </html>
