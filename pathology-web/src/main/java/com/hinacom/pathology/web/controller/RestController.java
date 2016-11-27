@@ -25,10 +25,7 @@ public class RestController extends BaseController{
 
     @RequestMapping("submit")
     @ResponseBody
-    public ModelAndView submit(@RequestBody User user) {
-        ModelAndView mv = new ModelAndView("rest");
-
-
+    public ArrayList<User> submit(@RequestBody User id) {
         ArrayList<User> userList = new ArrayList<User>();
         User outUser = new User();
         outUser.setId(1);
@@ -41,7 +38,6 @@ public class RestController extends BaseController{
         outUser.setName("MiaoMiao");
         userList.add(outUser);
 
-        mv.addObject("outUser",outUser);
-        return mv;
+        return userList;
     }
 }

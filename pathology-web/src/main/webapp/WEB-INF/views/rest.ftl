@@ -38,13 +38,10 @@
                 dataType: "json",
                 success: function (responseData) {
                     var result = JSON.stringify(responseData);
-                    $("#outMessage").html();
+                    $("#outMessage").html(result);
                 },
                 error: function (XMLHttpRequest, textStatus, errorThrown) {
-
-                },
-                beforeSend: function (XMLHttpRequest) {
-                    XMLHttpRequest.setRequestHeader("app-platform", "android");
+                    alert(errorThrown);
                 }
             });
 

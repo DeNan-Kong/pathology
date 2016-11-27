@@ -21,13 +21,7 @@
     <!-- don't handle the static resource -->
     <mvc:default-servlet-handler/>
 
-    <!-- if you use annotation you must configure following setting -->
-    <mvc:annotation-driven>
-        <mvc:message-converters register-defaults="true">
-            <ref bean="stringHttpMessageConverter" />
-            <ref bean="fastJsonHttpMessageConverter" />
-        </mvc:message-converters>
-    </mvc:annotation-driven>
+
 
     <bean class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
         <property name="templateLoaderPath" value="WEB-INF/views/"/>
@@ -89,4 +83,12 @@
             </bean>
         </property>
     </bean>
+
+    <!-- if you use annotation you must configure following setting -->
+    <mvc:annotation-driven>
+        <mvc:message-converters register-defaults="true">
+            <ref bean="stringHttpMessageConverter" />
+            <ref bean="fastJsonHttpMessageConverter" />
+        </mvc:message-converters>
+    </mvc:annotation-driven>
 </beans>
