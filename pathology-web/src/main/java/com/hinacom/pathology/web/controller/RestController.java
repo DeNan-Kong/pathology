@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -26,6 +27,8 @@ public class RestController extends BaseController{
     @RequestMapping("submit")
     @ResponseBody
     public ArrayList<User> submit(@RequestBody User id) {
+
+
         ArrayList<User> userList = new ArrayList<User>();
         User outUser = new User();
         outUser.setId(1);
